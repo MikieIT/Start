@@ -3,8 +3,10 @@
 }
 
 .page-wrap {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 20px auto;
+    
 }
 
 .main-story {
@@ -21,9 +23,10 @@ a {
 }
 
 .story-intro {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
+    max-width: 800px;
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
     padding: 20px;
@@ -50,7 +53,6 @@ h1, h2 {
 }
 
 .sub-story {
-    float: left;
     width: 250px;
     margin-right: 25px;
     position: relative;
@@ -59,4 +61,12 @@ h1, h2 {
 
 .last {
     margin-right: 0;
+}
+@media screen and (min-width:768px){
+    .sub-story{float: left;}
+    .last{clear: both;}
+}
+@media screen and (min-width:992px){
+    .sub-story{float: left;}
+    .last{clear: none;}
 }
