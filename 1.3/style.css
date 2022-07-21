@@ -1,7 +1,4 @@
-:root {
-  --next: bg2.png;
-  --prev: bg3.jpeg;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -59,24 +56,24 @@ div[id*='page'] {
 .prev {
   display: none;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   font-size: 50px;
   color: white;
   text-decoration: none;
   transition: text-shadow 0.15s linear;
   
 }
-#next-1 {
+.next {
   top: 50%;
   right: 15%;
   transform: translate(-50%, -50%);
 }
-#prev-1 {
+.prev {
   top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
-#next-2 {
+/*#next-2 {
   top: 50%;
   left: 185%;
   transform: translate(-50%, -50%);
@@ -95,9 +92,21 @@ div[id*='page'] {
   top: 50%;
   left: 215%;
   transform: translate(-50%, -50%);
-}
-.image:hover :where(.next, .prev) {
+}*/
+.conteiner:hover :where(.next, .prev) {
   display: block;
+}
+#page-1:hover :where(#next-1, #prev-1) {
+  display: block;
+  z-index: 2;
+}
+#page-2:hover :where(#next-2, #prev-2) {
+  display: block;
+  z-index: 2;
+}
+#page-3:hover :where(#next-3, #prev-3) {
+  display: block;
+  z-index: 2;
 }
 :where(.next, .prev):hover {
   text-shadow: 2px 0px 2px white, -2px 0px 2px white;;
@@ -182,4 +191,7 @@ div[id*='page'] {
 
 .dot:hover {
   background-color: white;
+}
+.conteiner:nth-child(1):target ~ .dots .dot-1 {
+  border: 3px solid red;
 }
