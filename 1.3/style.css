@@ -1,0 +1,118 @@
+:root {
+  --next: bg2.png;
+  --prev: bg3.jpeg;
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.conteiner {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+div[id*='page'] {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#page-1 {
+  background-image: url('bg1.jpeg');
+}
+#page-2 {
+  background-image: url('bg2.png');
+}
+#page-3 {
+  background-image: url('bg3.jpeg');
+}
+.text1 {
+  
+  position: fixed;
+  bottom: 7em;
+  padding: 50px 20%;
+  
+}
+
+/*Next and preveous buttons */
+
+#next-1 {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+#prev-1 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+#next-2 {
+  position: absolute;
+  top: 50%;
+  left: 185%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+#prev-2 {
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+#next-3 {
+  position: absolute;
+  top: 50%;
+  left: 285%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+#prev-3 {
+  position: absolute;
+  top: 50%;
+  left: 215%;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.dots {
+  position: fixed;
+  left: 50%;
+  bottom: 5em;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
