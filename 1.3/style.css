@@ -48,39 +48,66 @@ div[id*='page'] {
   padding: 50px 20%;
   
 }
+.image {
+  grid-auto-columns: 1fr;
+  
+}
 
 /*Next and preveous buttons */
-/*
+
 .next,
 .prev {
   display: none;
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   font-size: 50px;
   color: white;
   text-decoration: none;
-  transition: transform 0.5s linear;
-  transform: scale(1);
+  transition: text-shadow 0.15s linear;
+  
 }
-.next {
+#next-1 {
   top: 50%;
   right: 15%;
   transform: translate(-50%, -50%);
 }
-.prev {
+#prev-1 {
   top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
+#next-2 {
+  top: 50%;
+  left: 185%;
+  transform: translate(-50%, -50%);
+}
+#prev-2 {
+  top: 50%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+}
+#next-3 {
+  top: 50%;
+  left: 285%;
+  transform: translate(-50%, -50%);
+}
+#prev-3 {
+  top: 50%;
+  left: 215%;
+  transform: translate(-50%, -50%);
+}
+.image:hover :where(.next, .prev) {
+  display: block;
+}
 :where(.next, .prev):hover {
-  transform: scale(1.2);
+  text-shadow: 2px 0px 2px white, -2px 0px 2px white;;
 }
 .image {
   display: block;
 }
-*/
 
 
+/*
 #next-1 {
   position: absolute;
   top: 50%;
@@ -133,7 +160,7 @@ div[id*='page'] {
   transition: transform 0.15s linear;
   transform: scale(1);
 }
-
+*/
 
 .dots {
   position: fixed;
@@ -155,7 +182,4 @@ div[id*='page'] {
 
 .dot:hover {
   background-color: white;
-}
-.next:hover, .prev:hover {
-  transform: scale(1.2);
 }
