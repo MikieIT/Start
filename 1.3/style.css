@@ -50,6 +50,36 @@ div[id*='page'] {
 }
 
 /*Next and preveous buttons */
+/*
+.next,
+.prev {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s linear;
+  transform: scale(1);
+}
+.next {
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+.prev {
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+:where(.next, .prev):hover {
+  transform: scale(1.2);
+}
+.image {
+  display: block;
+}
+*/
+
 
 #next-1 {
   position: absolute;
@@ -99,6 +129,11 @@ div[id*='page'] {
   color: white;
   text-decoration: none;
 }
+.next, .prev {
+  transition: transform 0.15s linear;
+  transform: scale(1);
+}
+
 
 .dots {
   position: fixed;
@@ -115,4 +150,12 @@ div[id*='page'] {
   border-radius: 50%;
   display: inline-block;
   margin: 10px;
+  transition: background-color 0.15s linear;
+}
+
+.dot:hover {
+  background-color: white;
+}
+.next:hover, .prev:hover {
+  transform: scale(1.2);
 }
