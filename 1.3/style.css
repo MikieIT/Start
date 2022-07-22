@@ -98,15 +98,15 @@ div[id*='page'] {
 }
 #page-1:hover :where(#next-1, #prev-1) {
   display: block;
-  z-index: 2;
+  z-index: 10;
 }
 #page-2:hover :where(#next-2, #prev-2) {
   display: block;
-  z-index: 2;
+  z-index: 10;
 }
 #page-3:hover :where(#next-3, #prev-3) {
   display: block;
-  z-index: 2;
+  z-index: 10;
 }
 :where(.next, .prev):hover {
   text-shadow: 2px 0px 2px white, -2px 0px 2px white;;
@@ -192,6 +192,17 @@ div[id*='page'] {
 .dot:hover {
   background-color: white;
 }
-.conteiner:nth-child(1):target ~ .dots .dot-1 {
-  border: 3px solid red;
+
+.conteiner:has(.image:target) .dots > *:nth-child(1) {
+  background-color: transparent;
+}
+
+.dots > *:nth-child(1), .image:nth-child(1):target ~ .dots > *:nth-child(1) {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.image:nth-child(2):target ~ .dots > *:nth-child(2) {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.image:nth-child(3):target ~ .dots > *:nth-child(3) {
+  background-color: rgb(255, 255, 255, 0.5);
 }
