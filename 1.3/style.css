@@ -189,15 +189,13 @@ div[id*='page'] {
   transition: background-color 0.15s linear;
 }
 
-.dot:hover {
-  background-color: white;
-}
+
 
 .conteiner:has(.image:target) .dots > *:nth-child(1) {
   background-color: transparent;
 }
 
-.dots > *:nth-child(1), .image:nth-child(1):target ~ .dots > *:nth-child(1) {
+.image:nth-child(1):target ~ .dots > *:nth-child(1) {
   background-color: rgb(255, 255, 255, 0.5);
 }
 .image:nth-child(2):target ~ .dots > *:nth-child(2) {
@@ -205,4 +203,11 @@ div[id*='page'] {
 }
 .image:nth-child(3):target ~ .dots > *:nth-child(3) {
   background-color: rgb(255, 255, 255, 0.5);
+}
+.conteiner:has(.image:target) .dots > *:nth-child(1) {
+  background-color: transparent;
+}
+
+.dot:hover {
+  background-color: white;
 }
