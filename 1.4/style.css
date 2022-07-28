@@ -12,28 +12,7 @@ html, body {
   padding: 25px;
 }
 
-@media screen and (min-width:768px) {
-  .conteiner {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-  }
-  .product-hot {
-    grid-row: 1 / span 2;
-  }
-  
-}
-@media screen and (min-width:992px) {
-  .conteiner {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-  }
-  .product-hot {
-    grid-row: 1 / span 2;
-  }
-  
-}
+
 
 a {
   text-decoration: none;
@@ -172,4 +151,48 @@ a:hover {
 }
 a:hover :where(.description) {
   text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .product-hot {
+    grid-row: 1 / span 2;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  .price-hot {
+    margin-top: 15%;
+  }
+  .description-hot {
+    margin: 8% 0;
+  }
+}
+@media screen and (min-width:992px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+  .product-hot {
+    grid-row: 1 / span 2;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  .price-hot {
+    margin-top: 15%;
+  }
+  .description-hot {
+    margin: 7% 0;
+  }
+  
 }
