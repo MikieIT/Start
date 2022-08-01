@@ -209,9 +209,22 @@ img {
 .product-top {
   position: relative;
 }
+#product-hot {
+  height: 100%;
+}
+.price-hot {
+  margin-top: 15%;
+}
+.description-hot {
+  margin: 8% 0;
+}
 .foot-hot {
-  
+  width: 90%;
+  height: auto;
   bottom: 0;
+  position: absolute;
+  padding: 10px 0;
+
 }
 
 .discount-2 {
@@ -354,6 +367,7 @@ input[type=submit]:hover {
   }
   .description-hot {
     margin: 7% 0;
+    height: auto;
   }
   
 }
