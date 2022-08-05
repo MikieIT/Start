@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.btn {
+  font-size: 30px;
+  font-weight: 700;
+  color: gray;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid grey;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.827) 50%, rgba(168, 165, 165, 0.81) 50%);
+
+  outline: grey solid 2px;
+  outline-offset: 10px;
+  box-shadow: 0 0 10px 6px rgb(167, 166, 166);
+}
+
+.star {
+  background: grey;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
