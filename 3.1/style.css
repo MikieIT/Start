@@ -1,0 +1,466 @@
+
+* {
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body {
+  background-image: url(bg1.jpeg);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/*Header*/
+.header {
+  font-weight: bold;
+  text-align: center;
+  height: 100px;
+  padding-top: 15px;
+  width: 100%;  
+}
+
+/*Navigation*/
+.nav {
+  
+}
+.nav-a {
+  display: inline-block;
+  border: 1px solid red;
+  font-size: 20px;
+  padding: 10px;
+  width: 24%;
+}
+.nav-a:hover {
+  border: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*For screen less 768px*/
+.wrapper {
+  display: grid;
+  grid-template-rows: 50px auto 70px;
+  font-weight: bold;
+  text-align: center;
+  height: 81%;
+}
+
+.main {
+  background-color: white;
+  text-align: left;
+  overflow: auto;
+  position: relative;
+  opacity: 0.9;
+}
+.aside {
+  padding: 20px;
+}
+
+/*Footer*/
+.footer {
+  background-color: lightcyan;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.rights {
+  font-size: 15px;
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  bottom: 0;
+}
+
+
+/*Every product*/
+.conteiner {
+  padding: 25px;
+}
+
+.product {
+border: 1px solid rgb(210, 92, 92);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 18px;
+color: grey;
+padding: 10px 20px;
+}
+
+
+.discount {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: white;
+  background-color: rgb(210, 92, 92);
+  padding: 20px;
+  margin: 0;
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.image {
+  width: 59%;
+  height: auto;
+  float: left;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.price {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 2px dotted grey;
+  padding: 3px 0 5px;
+  
+}
+
+.new-price {
+  font-size: 30px;
+  color: rgb(224, 79, 79);
+  width: 100px;
+  flex-shrink: 0;
+  
+}
+
+.old-price {
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+  width: 70px;
+  flex-shrink: 0;
+  
+}
+.old-price:before {
+  content: "";
+  border-bottom: 3px solid grey;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  transform: rotate(10deg);
+}
+
+.amazon {
+  text-align: right;
+  width: 100%;
+}
+
+
+
+.description {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 70px;
+  padding: 5px 10px 5px 20px;
+  margin-top: 10px;
+}
+
+.foot {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  border-top: 2px dotted grey;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.free {
+  border-right: 2px dotted grey;
+}
+.new {
+  border-right: 2px dotted grey;
+}
+
+.image-1 {
+  float: right;
+  width: 40%;
+}
+.foot-1 {
+  border: none;
+  margin: 0;
+}
+
+.discount-1 {
+  background-color: rgb(255, 174, 0);
+}
+.product-1 {
+  border: 1px solid rgb(255, 174, 0);
+}
+
+.product-top {
+  position: relative;
+}
+#product-hot {
+  height: 100%;
+}
+.price-hot {
+  margin-top: 15%;
+}
+.description-hot {
+  margin: 8% 0;
+}
+.foot-hot {
+  width: calc(100% - 40px);
+  height: auto;
+  bottom: 0;
+  position: absolute;
+  padding: 10px 0;
+
+}
+
+.discount-2 {
+  background-color: rgb(255, 230, 0);
+}
+.product-2 {
+  border: 1px solid rgb(255, 230, 0);
+}
+.linkProd:hover {
+  border: 3px solid rgb(226, 83, 78);
+}
+.linkProd:hover :where(.description) {
+  text-decoration: underline;
+}
+
+
+
+/* Register */
+.register {
+  background-color: white;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: none;
+}
+#register:target {
+  display: block;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+/*About button*/
+
+.about {
+  background-color: white;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: none;
+}
+
+#about:target {
+  display: block;
+}
+
+/*About map*/
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+/*Contact us*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 1;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contact:target {
+  display: block;
+}
+
+
+/*Responsive screen*/
+
+@media screen and (min-width:768px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .product-hot {
+    grid-row: 1 / span 2;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  .price-hot {
+    margin-top: 15%;
+  }
+  .description-hot {
+    margin: 8% 0;
+  }
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width:1292px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+  .product-hot {
+    grid-row: 1 / span 2;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  #product-hot {
+    height: 100%;
+  }
+  .price-hot {
+    margin-top: 15%;
+  }
+  .description-hot {
+    margin: 7% 0;
+    height: auto;
+  }
+  
+}
+@media screen and (min-width:992px){
+  .wrapper{
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: auto;
+  }
+  .nav-a {
+    width: 100%;
+  }
+}
+
