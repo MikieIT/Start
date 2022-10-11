@@ -109,7 +109,7 @@ div[id*='page'] {
   z-index: 10;
 }
 :where(.next, .prev):hover {
-  text-shadow: 2px 0px 2px white, -2px 0px 2px white;;
+  text-shadow: 2px 0px 2px white, -2px 0px 2px white;
 }
 .image {
   display: block;
@@ -173,6 +173,7 @@ div[id*='page'] {
 
 .dots {
   position: fixed;
+  z-index: 1;
   left: 50%;
   bottom: 5em;
   transform: translateX(-50%);

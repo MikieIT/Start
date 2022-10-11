@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="slide-carousel" onclick="modalSize()">
+      <img class="image" src="img/bg6.jpeg" alt="6" id="clone-last">
+      <img class="image" src="img/bg1.jpeg" alt="1">
+      <img class="image" src="img/bg2.png" alt="2">
+      <img class="image" src="img/bg3.jpeg" alt="3">
+      <img class="image" src="img/bg4.jpeg" alt="4">
+      <img class="image" src="img/bg5.jpeg" alt="5">
+      <img class="image" src="img/bg6.jpeg" alt="6">
+      <img class="image" src="img/bg1.jpeg" alt="1" id="clone-first">
+    </div>
+
+    <a class="prev" id="prev-btn">❮</a>
+    <a class="next" id="next-btn">❯</a>
+
+    <div class="dots">
+      <div class="dot active" onclick="dotBtn(1)"></div>
+      <div class="dot" onclick="dotBtn(2)"></div>
+      <div class="dot" onclick="dotBtn(3)"></div>
+      <div class="dot" onclick="dotBtn(4)"></div>
+      <div class="dot" onclick="dotBtn(5)"></div>
+      <div class="dot" onclick="dotBtn(6)"></div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  
+  
+  
+  <!-- <a href="" class="next" id="next-1" aria-label="Next" onclick="nextImage()">❯</a>
+     <a href="" class="prev" id="prev-1" aria-label="Previous" onclick="prevImage()">❮</a> -->
+  <!-- <div class="dots">
+        <a href="#page-1" class="dot dot-1"></a>
+        <a href="#page-2" class="dot dot-2"></a>
+        <a href="#page-3" class="dot dot-3"></a>
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
