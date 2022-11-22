@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="search-container">
+    <h1>Your location</h1>
+    <div class="search-input-container">
+      <input type="text" id="search-input" placeholder="Search city">
+      <button type="submit" class="button-round">Search</button>
+    </div>
+
+  </div>
+  <div class="weather-container loading">
+    <div class="current-weather">
+      <h2>Weather in <span id="city-country">-</span></h2>
+      <div class="current-temp">
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" class="owm-weather-icon" id="current-weather-icon" width="50px" height="50px" alt="">
+        
+        <span data-v-3e6e9f12="" class="tempreture-top">-°C</span>
+      </div>
+      <div class="feels-like">Feels like - </div>
+      <div id="phenomenon"></div>
+      <div class="data-and-wrong">
+        <div id="present-data">-</div>
+        <div class="wrong-data">Wrong data?</div>
+      </div>
+      <div class="table-current-weather">
+        <div class="table-row">
+          <div class="table-column1">Wind</div>
+          <div class="table-column2" id="current-wind">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Cloudiness</div>
+          <div class="table-column2" id="current-cloudiness">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Pressure</div>
+          <div class="table-column2" id="current-pressure">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Humidity</div>
+          <div class="table-column2" id="current-humidity">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Sunrise</div>
+          <div class="table-column2" id="current-sunrise">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Sunset</div>
+          <div class="table-column2" id="current-sunset">-</div>
+        </div>
+        <div class="table-row">
+          <div class="table-column1">Geo coords</div>
+          <div class="table-column2" id="current-geo-coords">-</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="forecast-weather">
+      <h2>Hourly weather and forecasts in <span id="city-country-forecast">-</span></h2>
+      <div class="days-forecast day1-forecast">-</div>
+      <div class="day-forecast-data" id="day1-forecast-data"></div>
+      <div class="days-forecast day2-forecast">-</div>
+      <div class="day-forecast-data" id="day2-forecast-data">
+        <!-- <div class="forecast-information-container">
+          <div class="hours-forecast-data">
+            <span class="time-forecast">2.00</span>
+            <img src="http://openweathermap.org/img/wn/01d@2x.png" class="owm-weather-icon" width="50px" height="50px" alt="">
+          </div>
+          <div class="hours-forecast-information">
+            <div class="forecast-temp-clouds">
+              <span class="temp-forecast">1.77</span> ipsum dolor sit amet</div>
+            <div class="forecast-wind-humidity-pressure">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div> -->
+      </div>
+      <div class="days-forecast day3-forecast">-</div>
+      <div class="day-forecast-data" id="day3-forecast-data"></div>
+      <div class="days-forecast day4-forecast">-</div>
+      <div class="day-forecast-data" id="day4-forecast-data"></div>
+      <div class="days-forecast day5-forecast">-</div>
+      <div class="day-forecast-data" id="day5-forecast-data"></div>
+      <div class="days-forecast day6-forecast">-</div>
+      <div class="day-forecast-data" id="day6-forecast-data"></div>
+      
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
